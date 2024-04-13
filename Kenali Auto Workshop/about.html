@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>About | Kenali Auto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .find{
+            margin-bottom: 30px;
+        }
+        .col-2{
+            text-size-adjust: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.php"><img src="images/kenalilogo.jpg" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="booking.php">Book Now!</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="account.html">User Manual</a></li>
+                    <li><a href="admin_login.php">Admin</a></li>
+                </ul>
+            </nav>
+            <a href="products.php"><img src="images/cart.png" width="30px" height="30px"></a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+        <div class="row">
+            <div class="col-2">
+                <h1>KENALI AUTO</h1>
+                <p>Welcome to Kenali Auto, your go-to destination for automotive services and repairs. With years of experience in the industry, we take pride in providing high-quality services to our valued customers. Our team of skilled technicians is dedicated to ensuring that your vehicle receives the care and attention it deserves.</p>
+            <p>At Kenali Auto, we understand the importance of reliability and efficiency when it comes to your vehicle. Whether you need routine maintenance, repairs, or customization, we've got you covered. We strive to exceed your expectations and deliver exceptional results that keep you on the road with confidence.</p>
+            <p>Customer satisfaction is our top priority, and we are committed to delivering excellent service with integrity and professionalism. From oil changes to engine diagnostics, you can trust Kenali Auto to provide reliable solutions tailored to your needs.</p>
+            <p>Thank you for choosing Kenali Auto. We look forward to serving you and providing you with a superior automotive experience.</p>
+                <br>
+                <div class="find">
+                <p>FIND US IN GOOGLE MAPS</p>
+                <a href="https://www.google.com/maps/place/Kenali+Autoworks/@2.9758641,101.7904582,17z/data=!3m1!4b1!4m6!3m5!1s0x31cdcb8b77058307:0x99ed9a901e2592c8!8m2!3d2.9758587!4d101.7930331!16s%2Fg%2F11cjnn_9q0?entry=ttu" class="btn">Google Maps &#8594;</a>
+            </div>
+             
+        </div>
+    </div>
+</div>
+
+<div class="offer">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-2">
+                <img src="images/camry.png" class="offer-img">
+            </div>
+            <div class="col-2">
+                <p>Exclusive Availabe on Kenali Auto</p>
+                <h1>Check It Out!</h1>
+                <p>We provides the best spare parts selling in market now!</p>
+                <a href="products.php" class="btn">Explore Now &#8594;</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!--------- footer ------->
+
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Download Our App</h3>
+                        <p>Download App for Android and Ios mobile phone</p>
+                        <div class="app-logo">
+                            <img src="images/play-store.png">
+                            <img src="images/app-store.png">
+                        </div>
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="images/kenalilogo.jpg">
+                        <p>Our Purpose Is Sustainably Make the Pleasure and
+                        Benefits of Workshop Accessible to the Many.</p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Blog Post</li>
+                            <li>Return Policy</li>
+                            <li>Join Affiliate</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <li><a href="https://www.tiktok.com/@futuraband">Tiktok</a></li>
+                            <li><a href="https://twitter.com/futurabandmy">Twitter</a></li>
+                            <li><a href="https://www.instagram.com/futurabandmy">Instagram</a></li>
+                            <li><a href="https://www.youtube.com/@futurabandmy">Youtube</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <hr>
+                <p class="copyright">Copyright 2023 - Kenali Auto</p>
+            </div>
+        </div>
+<!----------js for toggle menu---------->
+        <script>
+            var MenuItems = document.getElementById("MenuItems");
+
+            MenuItems.style.maxHeight = "0px";
+
+            function menutoggle(){
+                if( MenuItems.style.maxHeight == "0px")
+                {
+                    MenuItems.style.maxHeight = "200px";
+                }
+                else
+                {
+                    MenuItems.style.maxHeight = "0px";
+                }
+            }
+        </script>
+        <script scr="app.js"></script>
+
+</body>
+</html>

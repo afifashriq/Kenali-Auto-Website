@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Manual & FAQ | Kenali Auto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /* Custom styles for FAQ and user manual */
+        .faq {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+            margin-bottom: 100px;
+            text-align: justify;
+        }
+        .faq h2 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        .faq-item {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .question {
+            font-size: 18px;
+            color: #333;
+            cursor: pointer;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+        .answer {
+            display: contents ;
+            padding-left: 20px;
+            margin-top: 10px;
+            margin-bottom: 50px;
+            text-align: left;
+        }
+        .answer p {
+            font-size: 16px;
+            color: #000;
+        }
+        .user-manual {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+            margin-bottom: 100px;
+        }
+        .user-manual h2 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        .user-manual ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .user-manual li {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+        .instruction {
+            text-align: justify;
+            margin-bottom: 0px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.php"><img src="images/kenalilogo.jpg" width="125px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.php">Home</a></li>
+                        <li><a href="booking.php">Book Now!</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="account.html">User Manual</a></li>
+                        <li><a href="admin_login.php">Admin</a></li>
+                    </ul>
+                </nav>
+                <a href="products.php"><img src="images/cart.png" width="30px" height="30px"></a>
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="navbar">
+            <!-- Navbar Content -->
+        </div>
+    </div>
+
+    <!-- FAQ and User Manual Sections -->
+    <div class="container">
+        <div class="faq">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3 class="question"> How do I make a booking?</h3>
+                <div class="answer">
+                    <p>To make a booking, simply navigate to the "Book Now!" page and follow the prompts to select your desired date, time, and service. Then, fill out the required information and confirm your booking.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <h3 class="question">Can I print the Booking Receipt and Order Receipt?</h3>
+                <div class="answer">
+                    <p>Yes absolutely! Just click the Print Button displayed on the page.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <h3 class="question">How can I add the products to Cart</h3>
+                <div class="answer">
+                    <p>At the shopping page, just click at the add to cart button and it will shown at the Cart Icon that your products have been added.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <h3 class="question">How to checkout order?</h3>
+                <div class="answer">
+                    <p>At the cart page, click the checkout button and you will be redirected to the checkout page.</p>
+                </div>
+            </div>
+            <!-- Add more FAQ items -->
+        </div>
+
+        <div class="user-manual">
+            <h2>User Manual</h2>
+            <ul>
+                <div class="instruction">
+                    <h3 class="question">Instruction 1:</h3>
+                <li>Navigate to the "Book Now!" page from the main menu to initiate the booking process.</li>
+                <h3 class="question">Instruction 2:</h3>
+                <li>Select your preferred date and time for the service you wish to book.</li>
+                <h3 class="question">Instruction 3:</h3>
+                <li>Fill out the required information, including your name, contact details, and any specific requests.</li>
+                <h3 class="question">Instruction 4:</h3>
+                <li>Review your booking details and confirm your appointment to finalize the booking.</li>
+                <h3 class="question">Instruction 5:</h3>
+                <li>Click at the shopping bag to be redirected to the shopping page</li>
+                <h3 class="question">Instruction 6:</h3>
+                <li>Explore the shopping page and you can click add to cart and choose quantity</li>
+                <h3 class="question">Instruction 7:</h3>
+                <li>Go to Cart page by clicking at the "Cart Icon"</li>
+                <h3 class="question">Instruction 8:</h3>
+                <li>Fill out the form on the Checkout Page and click "Place Order"</li>
+                <h3 class="question">Instruction 9:</h3>
+                <li>The order receipt will shows up and you can print the order</li>
+                <h3 class="question">Instruction 10:</h3>
+                <li>You can also print the Booking Receipt</li>
+                </div>
+                <!-- Add more instructions -->
+            </div>
+            </ul>
+        </div>
+    </div>
+
+    <!--------- footer ------->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and Ios mobile phone</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png">
+                        <img src="images/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/kenalilogo.jpg">
+                    <p>Our Purpose Is Sustainably Make the Pleasure and
+                    Benefits of Workshop Accessible to the Many.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><a href="https://www.tiktok.com/@futuraband">Tiktok</a></li>
+                        <li><a href="https://twitter.com/futurabandmy">Twitter</a></li>
+                        <li><a href="https://www.instagram.com/futurabandmy">Instagram</a></li>
+                        <li><a href="https://www.youtube.com/@futurabandmy">Youtube</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2023 - Kenali Auto</p>
+        </div>
+    </div>
+
+    <!-- JavaScript for toggling menu -->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if( MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            } else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+</html>
